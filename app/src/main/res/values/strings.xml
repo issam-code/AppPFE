@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ShareDoc</string>
+    <string-array name="groupe">
+        <item>choisir ton goupe ..</item>
+        <item>Premiere-INFO</item>
+        <item>Deuxieme-INFO</item>
+        <item>Premiere-EREE</item>
+        <item>Deuxieme-EREE</item>
+        <item>Premiere-ME</item>
+        <item>Deuxieme-ME</item>
+
+    </string-array>
+    <string name="open">open</string>
+    <string name="close">close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

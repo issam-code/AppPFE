@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8F4DB8A7"
+    tools:context=".Profil">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/tbrow33"
+            android:layout_width="wrap_content"
+            android:layout_height="158dp"
+            android:layout_weight="10"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="visible"
+            tools:visibility="visible">
+
+            <ImageView
+                android:id="@+id/imgup"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="fitXY"
+                android:visibility="visible"
+                app:layout_constraintBottom_toTopOf="@+id/btup"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/he" />
+
+            <Button
+                android:id="@+id/btup"
+                android:layout_width="120dp"
+                android:layout_height="37dp"
+                android:text="choisir photo"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/tbrow2"
+            android:layout_width="wrap_content"
+            android:layout_height="86dp"
+            android:layout_weight="10"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="visible"
+            tools:visibility="visible">
+
+
+            <EditText
+                android:id="@+id/nomup"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:background="#9FF3EBE9"
+                android:ems="10"
+                android:hint=" Nom"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.466" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/tbrow3"
+            android:layout_width="wrap_content"
+            android:layout_height="86dp"
+            android:layout_weight="10"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="visible"
+            tools:visibility="visible">
+
+
+            <EditText
+                android:id="@+id/prnomup"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:background="#9FF3EBE9"
+                android:ems="10"
+                android:hint=" Prenom"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/tbrow4"
+            android:layout_width="wrap_content"
+            android:layout_height="86dp"
+            android:layout_weight="10"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="visible"
+            tools:visibility="visible">
+
+
+            <EditText
+                android:id="@+id/mailup"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:background="#9FF3EBE9"
+                android:ems="10"
+                android:hint=" E-mail"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.539"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.448" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/tbrow12"
+            android:layout_width="wrap_content"
+            android:layout_height="86dp"
+            android:layout_weight="10"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="visible"
+            tools:visibility="visible">
+
+            <EditText
+                android:id="@+id/usrnameup"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:background="#9FF3EBE9"
+                android:ems="10"
+                android:hint="Username"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/tbrow14"
+            android:layout_width="wrap_content"
+            android:layout_height="73dp"
+            android:layout_weight="10"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="visible"
+            tools:visibility="visible">
+
+
+            <EditText
+                android:id="@+id/newpass"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="16dp"
+                android:background="#9FF3EBE9"
+                android:ems="10"
+                android:hint=" Le nouveau mot de passe"
+
+                android:inputType="textPassword"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="NotSibling" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/tbrow16"
+            android:layout_width="wrap_content"
+            android:layout_height="86dp"
+            android:layout_weight="10"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="visible"
+            tools:visibility="visible">
+
+
+            <EditText
+                android:id="@+id/actpass"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:background="#9FF3EBE9"
+                android:ems="10"
+                android:hint=" Mot de passe actuel"
+                android:inputType="textPassword"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/updat"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="NotSibling" />
+
+            <Button
+                android:id="@+id/updat"
+                android:layout_width="116dp"
+                android:layout_height="36dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="#B577BD46"
+                android:onClick="inscri"
+                android:text="Modifier"
+                android:textColor="#080B1B"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="NotSibling,OnClick" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </TableLayout>
+
+</FrameLayout>

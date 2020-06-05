@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/v"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="341dp"
+        android:layout_height="588dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/tbrow12"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="7"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="visible"
+            tools:visibility="visible">
+
+
+            <ImageView
+                android:id="@+id/lgo"
+                android:layout_width="120dp"
+                android:layout_height="112dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/logo" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/tbrow1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="visible"
+            tools:visibility="visible">
+
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="#A3EEEBEB"
+                android:drawableRight="@drawable/ic_action_user"
+                android:ems="10"
+                android:hint=" votre Username"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/tbrow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="visible"
+            tools:ignore="DuplicateIds"
+            tools:visibility="visible">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="#A3EEEBEB"
+                android:drawableRight="@drawable/ic_action_pass"
+                android:ems="10"
+                android:hint=" Mot de passe"
+                android:inputType="textPassword"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.224" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/tbrow3"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_weight="7"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="visible"
+            tools:visibility="visible">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/logiin"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="32dp"
+                android:onClick="connect"
+                app:cardBackgroundColor="#DF03445F"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Connection"
+                        android:textColor="#CEE0E3E7"
+                        app:fontFamily="monospace" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/tbrow4"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_weight="6"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="visible"
+            tools:ignore="DuplicateIds"
+            tools:visibility="visible">
+
+            <Button
+                android:id="@+id/plaintxt"
+                android:layout_width="101dp"
+                android:layout_height="22dp"
+                android:background="#C3A3CDFA"
+                android:onClick="inscri"
+                android:text="Inscrire"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#0C0C0A"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.34" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

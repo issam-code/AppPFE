@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/v"
+    tools:context=".Inscription">
+
+
+    <TableLayout
+        android:layout_width="393dp"
+        android:layout_height="630dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/tbrow33"
+            android:layout_width="wrap_content"
+            android:layout_height="158dp"
+            android:layout_weight="10"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="visible"
+            tools:visibility="visible">
+
+            <ImageView
+                android:id="@+id/imgview"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:scaleType="fitXY"
+                android:visibility="visible"
+                app:layout_constraintBottom_toTopOf="@+id/buttonimg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/he" />
+
+            <Button
+                android:id="@+id/buttonimg"
+                android:layout_width="120dp"
+                android:layout_height="37dp"
+                android:text="choisir photo"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/tbrow2"
+            android:layout_width="wrap_content"
+            android:layout_height="86dp"
+            android:layout_weight="10"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="visible"
+            tools:visibility="visible">
+
+
+            <EditText
+                android:id="@+id/insnom"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:background="#9FF3EBE9"
+                android:ems="10"
+                android:hint="Votre Nom"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.466" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/tbrow3"
+            android:layout_width="wrap_content"
+            android:layout_height="86dp"
+            android:layout_weight="10"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="visible"
+            tools:visibility="visible">
+
+
+            <EditText
+                android:id="@+id/incprnom"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:background="#9FF3EBE9"
+                android:ems="10"
+                android:hint="Votre Prenom"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/tbrow4"
+            android:layout_width="wrap_content"
+            android:layout_height="86dp"
+            android:layout_weight="10"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="visible"
+            tools:visibility="visible">
+
+
+            <EditText
+                android:id="@+id/inscmail"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:background="#9FF3EBE9"
+                android:ems="10"
+                android:hint="Votre E-mail"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.539"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.448" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/tbrow12"
+            android:layout_width="wrap_content"
+            android:layout_height="86dp"
+            android:layout_weight="10"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="visible"
+            tools:visibility="visible">
+
+            <EditText
+                android:id="@+id/usrname"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:background="#9FF3EBE9"
+                android:ems="10"
+                android:hint="Username (sans '/' , '@' , '.' , '-' ...)"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/tbrow14"
+            android:layout_width="wrap_content"
+            android:layout_height="86dp"
+            android:layout_weight="10"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="visible"
+            tools:visibility="visible">
+
+            <EditText
+                android:id="@+id/inspass"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:background="#9FF3EBE9"
+                android:ems="10"
+                android:hint="Mot de passe"
+                android:inputType="textPassword"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.508"
+                tools:ignore="NotSibling" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/tbrow17"
+            android:layout_width="wrap_content"
+            android:layout_height="86dp"
+            android:layout_weight="10"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="visible"
+            tools:visibility="visible">
+
+
+            <Spinner
+                android:id="@+id/spinnergroup"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="72dp"
+                android:background="#9FF3EBE9"
+                android:ems="10"
+                android:padding="@dimen/nav_header_vertical_spacing"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.466"
+                android:layout_marginRight="72dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/tbrow16"
+            android:layout_width="wrap_content"
+            android:layout_height="86dp"
+            android:layout_weight="10"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="visible"
+            tools:visibility="visible">
+
+
+            <Button
+                android:id="@+id/inscr"
+                android:layout_width="116dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="8dp"
+                android:background="#B577BD46"
+                android:text="Inscrit"
+                android:textColor="#080B1B"
+                android:onClick="inscri"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.808"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.257"
+                tools:ignore="NotSibling,OnClick"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="8dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Propos"
+    android:background="@drawable/ss">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/tbrow3"
+            android:layout_width="wrap_content"
+            android:layout_height="742dp"
+            android:background="#72DAC6C1"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="visible"
+            tools:ignore="DuplicateIds"
+            tools:visibility="visible">
+
+
+            <TextView
+                android:id="@+id/prop1"
+                android:layout_width="333dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="168dp"
+                android:text="Bienvenue dans notre application 'ShareDoc'"
+                android:textAlignment="center"
+                android:textColor="#0D112B"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.205"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/prop2"
+                android:layout_width="342dp"
+                android:layout_height="77dp"
+                android:layout_marginTop="40dp"
+                android:text="ShareDoc est une application qui facilité la gestion de vos documents
+(PPT, PDF, txt, doc ...).\n Avoir ShareDoc dans votre téléphone ça veut dire au revoir au papiers"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#1A1031"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/prop1"
+                tools:ignore="MissingConstraints"
+                android:gravity="start" />
+
+            <TextView
+                android:id="@+id/prop3"
+                android:layout_width="342dp"
+                android:layout_height="140dp"
+                android:text="ShareDoc offre au
+ administration une gestion, et une organisation à leurs documents, dossiers, utilisateur,
+ainsi qu'il sert a réduire la communication interne pour l'envoi des document par le professeur , s'adressant a leurs étudiants."
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#1A1031"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.536"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/prop2"
+                app:layout_constraintVertical_bias="0.117"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </TableLayout>
+
+</FrameLayout>

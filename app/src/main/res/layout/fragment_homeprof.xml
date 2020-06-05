@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Homeprof"
+    android:background="@drawable/im">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/dr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#97DDD167"
+        tools:context=".menu">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <TableLayout
+            android:layout_width="336dp"
+            android:layout_height="436dp"
+            android:visibility="visible">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/tbrowa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:visibility="visible"
+                tools:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txtpr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="#282D42"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/tbrowc"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_weight="10"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:visibility="visible"
+                tools:visibility="visible">
+
+                <Button
+                    android:id="@+id/budos"
+                    android:layout_width="103dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bt"
+                    android:text="Dossiers"
+                    android:onClick="dossprof"
+                    android:textColor="#F0EDEA"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.408"
+                    tools:ignore="OnClick" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/tbrowd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:visibility="visible"
+                tools:ignore="DuplicateIds"
+                tools:visibility="visible">
+
+                <Button
+                    android:id="@+id/buutil1"
+                    android:layout_width="105dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bt"
+                    android:onClick="utilprof"
+                    android:text="GROUPES ETUDIANTS"
+                    android:textColor="#F0EDEA"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.074"
+                    tools:ignore="OnClick" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="53dp" />
+        </TableLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</FrameLayout>
